@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bookman Old Style', serif;
+}
+
+header {
+    background-image: url('logo.jpeg');
+    background-size: cover;
+    height: 800px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    width: 140px;
+}
+
+/* Navigation Links */
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+    list-style: none;
+    display: inline-block;
+}
+
+/* Link Styles */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+/* Underline Animation */
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f5f5dc;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+/* Hover Effects for Links */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color:  #f5f5dc; /* Change link color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 640px) {
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+.text-gray-300 {
+    color: #D1D5DB; /* Tailwind gray-300 */
+}
+
+.bg-gray-900 {
+    background-color: #1F2937; /* Tailwind gray-900 */
+}
+
+.text-gray-100 {
+    color: #F3F4F6; /* Tailwind gray-100 */
+}
+
+.border-gray-700 {
+    border-color: #374151; /* Tailwind gray-700 */
+}
+
+.bg-indigo-500 {
+    background-color: #6366F1; /* Tailwind indigo-500 */
+}
+
+.bg-indigo-600 {
+    background-color: #4F46E5; /* Tailwind indigo-600 */
+}
+
+.bg-indigo-100 {
+    background-color: #E0E7FF; /* Tailwind indigo-100 */
+}
+
+.text-indigo-500 {
+    color: #6366F1; /* Tailwind indigo-500 */
+}
+
+.text-white {
+    color: white;
+}
+
+.leading-relaxed {
+    line-height: 1.625; /* Tailwind leading-relaxed */
+}
+
+.title-font {
+    font-weight: 500; /* Adjusted for the title font */
+}
+
+.text-base {
+    font-size: 1rem; /* Tailwind base font size */
+}
+
+.font-medium {
+    font-weight: 500; /* Tailwind font-medium */
+}
+
+/* Additional Styles */
+.text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+a:hover {
+    color: #ffffff; /* Change link color on hover */
+    transition: color 0.3s ease;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4F46E5; /* Use the darker indigo */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.container {
+    padding: 20px; /* Adjust padding */
+}
+
+h1, p {
+    margin-bottom: 16px; /* Add spacing */
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller screen font size */
+    }
+}
+
+@media (min-width: 641px) {
+    h1 {
+        font-size: 2rem; /* Larger screen font size */
+    }
+}
+
+footer {
+    background-color: #1F2937   ; /* Footer background */
+    color: #D1D5DB; /* Footer text color */
+    text-align: center;
+    padding: 20px;
+}
+
+#services {
+    background: linear-gradient(to bottom, #a8e6cf, #dcedc1);
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.services-list div {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 40px;
+    background: #f9f6f6;
+    border-radius: 10px;
+    transition: 0.5s, transform 0.5s;
+    height: 100%; /* Ensure equal height */
+    position: relative;
+    overflow: hidden; /* Ensure the anchor doesn't overflow */
+}
+
+.services-list div i {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.case-link {
+    font-size: 16px;
+    position: relative; /* Changed from absolute to relative */
+    display: block; /* Ensure the links take up full width */
+    margin-top: 1px; /* Add spacing between the links */
+    text-decoration: none; /* Optional: remove underlines from links */
+    color: #333; /* Set a neutral link color */
+    z-index: 0; /* Reset z-index to default */
+}
+h3 {
+    font-size: 10px;
+    color: blue;
+}
+.a1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.services-list div:hover {
+    background: #f5f5dc; /* Change color on hover */
+    transform: translateY(-10px);
+}
+
+/* Optional: Style for hovering the links */
+.services-list div a:hover {
+    color: #4F46E5; /* Change color on hover */
+    font-weight: bold;
+}
+
+/* Ensure the last row has 2 columns on smaller screens */
+@media (max-width: 1024px) {
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.content {
+    max-width: 1200px;  /* Further increased width */
+    margin: 2rem auto;
+    padding: 0 30px;
+}
+
+.post {
+    background-color: #f0f5f3;  /* Light background */
+    border-radius: 12px;        /* Increased border radius for more rounded corners */
+    padding: 4rem;              /* Increased padding for a bigger box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow for more depth */
+    
+    /* New border with light green color */
+    border: 3px solid lightgreen; /* Thicker border */
+}
+
+.post-title {
+    font-size: 3rem;             /* Larger title size */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Add a serif font for a more elegant look */
+}
+
+.post-meta {
+    color: #999;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-image {
+    max-width: 100%;               /* Make sure the image does not exceed the width of the parent */
+    height: auto;                  /* Maintain aspect ratio */
+    border-radius: 12px;           /* Consistent border radius */
+    margin: 2rem auto;             /* Center the image with automatic margins */
+    display: block;                /* Make the image a block element */
+}
+
+
+.post-text {
+    font-size: 1.3rem;             /* Larger text for better readability */
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    list-style-type: disc;         /* Set bullet points */
+    padding-left: 20px;            /* Indent bullet points */
+}
+
+strong {
+    color: #f4a858;                /* Optional: Change color of bold text */
+    font-weight: bold;             /* Ensure strong text is bold */
+}

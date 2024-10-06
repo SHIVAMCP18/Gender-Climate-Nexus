@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+img {
+    display: block;                /* Make the image a block element */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;            /* Automatically set left margin */
+    margin-right: auto;           /* Automatically set right margin */
+}
+
+
+/* Header Styles */
+.header {
+    background-color: #f4a858;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+
+    /* Increase font size and change font style */
+    font-size: 80px;               /* Larger text size */
+    font-family: 'Georgia', serif; /* Stylish serif font */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 2.5rem; /* Increased font size */
+    font-family: 'Bookman Old Style', serif; /* Set font family */
+}
+
+
+/* Content Styles */
+.content {
+    max-width: 1200px;  /* Further increased width */
+    margin: 2rem auto;
+    padding: 0 30px;
+}
+
+.post {
+    background-color: #f0f5f3;  /* Light background */
+    border-radius: 12px;        /* Increased border radius for more rounded corners */
+    padding: 4rem;              /* Increased padding for a bigger box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow for more depth */
+    
+    /* New border with light green color */
+    border: 3px solid lightgreen; /* Thicker border */
+}
+
+.post-title {
+    font-size: 3rem;             /* Larger title size */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Add a serif font for a more elegant look */
+}
+
+.post-meta {
+    color: #999;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 600px; /* Ensures the image doesn't exceed its natural size */
+    height: auto; /* Maintains the aspect ratio */
+    float: right; /* Floats the image to the right of the text */
+    margin-left: 20px; /* Adds space between the image and the text */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.post-text {
+    font-size: 1.3rem;             /* Larger text for better readability */
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    list-style-type: disc;         /* Set bullet points */
+    padding-left: 20px;            /* Indent bullet points */
+}
+
+strong {
+    color: #f4a858;                /* Optional: Change color of bold text */
+    font-weight: bold;             /* Ensure strong text is bold */
+}
+
+
+
+

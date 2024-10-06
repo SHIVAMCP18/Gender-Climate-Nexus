@@ -1,0 +1,97 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    background: #fff;
+    width: 900px; /* Increased width for more space */
+    max-width: 90%; /* Added max-width for responsiveness */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Added spacing below the title */
+}
+
+hr {
+    width: 100px;
+    margin: 10px auto;
+    border: 1px solid #D1D5DB; /* Style the line */
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between; /* Space between members */
+}
+
+.team-mem {
+    margin: 10px;
+    text-align: center; /* Center text within team member */
+    flex-basis: calc(25% - 20px); /* Four members in a row on larger screens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for team members */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding for inner content */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.team-mem:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+h4, p {
+    font-size: 14px; /* Slightly increased font size */
+    margin: 7px;
+}
+
+.team-mem h4 i {
+    margin-left: 8px; /* Add some space between the name and the icon */
+    color: #6366F1; /* Change the icon color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .team-mem {
+        flex-basis: calc(33.33% - 20px); /* Three members in a row on medium screens */
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        width: 90%; /* Make it responsive on smaller screens */
+    }
+    
+    .team-mem {
+        flex-basis: calc(50% - 20px); /* Two members in a row on small screens */
+    }
+
+    h4, p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}

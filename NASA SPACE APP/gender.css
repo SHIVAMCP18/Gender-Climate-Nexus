@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+img {
+    display: block;                /* Make the image a block element */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;            /* Automatically set left margin */
+    margin-right: auto;           /* Automatically set right margin */
+}
+
+
+/* Header Styles */
+.header {
+    background-color: #f4a858;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+
+    /* Increase font size and change font style */
+    font-size: 80px;               /* Larger text size */
+    font-family: 'Georgia', serif; /* Stylish serif font */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 2.5rem; /* Increased font size */
+    font-family: 'Bookman Old Style', serif; /* Set font family */
+}
+
+
+/* Content Styles */
+.content {
+    max-width: 1200px;  /* Further increased width */
+    margin: 2rem auto;
+    padding: 0 30px;
+}
+/* Post Layout using Flexbox */
+.post {
+    display: flex;                   /* Flexbox for horizontal layout */
+    justify-content: space-between;  /* Spread content with space between */
+    align-items: flex-start;         /* Align items at the top */
+    background-color: #f0f5f3;       /* Light background */
+    border-radius: 12px;             /* Rounded corners */
+    padding: 4rem;                   /* Padding inside the post */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    border: 3px solid lightgreen;    /* Border color */
+    gap: 2rem;                       /* Space between text and image */
+    margin-bottom: 2rem;             /* Space between posts */
+}
+
+/* Post text styles */
+.post-text {
+    font-size: 1.3rem;                /* Larger text size */
+    line-height: 1.9;                 /* Better readability */
+    flex: 2;                          /* Take up more space in the flexbox */
+}
+
+/* Image styles */
+.post-image {
+    max-width: 400px;                 /* Limit the image width */
+    height: auto;                     /* Keep image aspect ratio */
+    border-radius: 12px;              /* Rounded corners */
+    flex: 1;                          /* Image takes up less space */
+    display: block;
+    margin-top: 85px;
+}
+
+
+
+
